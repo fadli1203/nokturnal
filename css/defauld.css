@@ -1,0 +1,56 @@
+.overlay-1{
+    position: relative;
+  z-index: 1
+}
+.bg-1{
+    margin-top: 100px;
+    background-image: url(../../img/bg/nokturnal.jpg);
+    background-attachment: scroll;
+  background-clip: initial;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: initial;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+.ptb-100{
+    padding: 100px;
+ 
+}
+.banner {
+  position: relative;
+  height: 70vh;
+  background: url('https://i.pinimg.com/originals/d4/9c/47/d49c4781b439670ea54342c2e5f94426.jpg') no-repeat center center/cover;
+  
+}
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.banner-content h1 {
+  font-size: 4vw; /* Responsive font size */
+ 
+}
+
+
+
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 8vw; /* Adjust for smaller screens */
+  }
+ 
+  .banner-content span.btn {
+    font-size: 3vw; /* Adjust for smaller screens */
+  }
+}
+/*banner css*/
+.carousel-item img {
+  width: 100%; /* Sesuaikan dengan persentase atau ukuran yang diinginkan */
+  max-height: 500px; /* Sesuaikan tinggi maksimal sesuai kebutuhan */
+  object-fit: cover; /* Menjaga rasio gambar agar tidak terdistorsi */
+}

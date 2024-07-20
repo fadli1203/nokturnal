@@ -1,0 +1,317 @@
+html, body {
+    scroll-behavior: smooth;
+     height: 100%;
+   }
+
+   .banner {
+    position: relative;
+    height: 70vh;
+    background: url('https://i.pinimg.com/originals/d4/9c/47/d49c4781b439670ea54342c2e5f94426.jpg') no-repeat center center/cover;
+    
+  }
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+  }
+  .banner-content h1 {
+    font-size: 4vw; /* Responsive font size */
+   
+  }
+  
+  .banner-content span.btn {
+    font-size: 1.5vw; /* Responsive font size */
+  }
+  
+  @media (max-width: 768px) {
+    .banner-content h1 {
+      font-size: 8vw; /* Adjust for smaller screens */
+    }
+   
+    .banner-content span.btn {
+      font-size: 3vw; /* Adjust for smaller screens */
+    }
+  }
+/*banner css*/
+.carousel-item img {
+    width: 100%; /* Sesuaikan dengan persentase atau ukuran yang diinginkan */
+    max-height: 500px; /* Sesuaikan tinggi maksimal sesuai kebutuhan */
+    object-fit: cover; /* Menjaga rasio gambar agar tidak terdistorsi */
+  }
+  /*navbar css*/
+  
+  .navbar {
+      background-color:  rgba(194,189,181, 0.9); /* Warna latar belakang navbar dengan opasitas 50% */
+      transition: background-color 0.3s ease-in-out; /* Animasi perubahan warna latar belakang */
+  }
+  .navbar.scrolled {
+      background-color: rgba(77,77,77, 0.3); /* Latar belakang navbar solid saat digulir */
+  }
+  
+  .navbar-brand {
+      color: white; /* Warna teks navbar */
+      margin-left: 50px;
+      font-style: bold;
+  
+  }
+  
+  .navbar-nav .nav-link {
+      color: #422811; /* Warna teks link navbar */
+  }
+  
+ /*Card Menu*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antara dua kartu */
+    margin: 0 auto; /* Untuk menempatkan container di tengah */
+    padding: 20px; /* Ruang di sekitar container */
+    flex-wrap: wrap;
+  }
+  .card {
+    flex-direction: row;
+    max-width: 30em;
+    border: 0;
+    background-color: #c7b299;
+    color: #ECDAB1;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
+  }
+  .card img {
+    max-width: 25%;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 0.7em;
+    
+  }
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .text-section {
+    max-width: 60%;
+  }
+  .cta-section {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+  }
+
+  .card-text {
+    letter-spacing: 0.1em;
+    color: #ebe5dd;
+  }
+  .card-title{
+  color: #4d4d4d;
+
+  }
+  @media (max-width: 768px) {
+    .card {
+      flex: 0 0 100%; /* Ubah ukuran kartu menjadi 100% saat layar kecil */
+    }
+  }
+
+
+/*footer*/
+footer {
+  
+  bottom: 0;
+}
+
+@media (max-height:800px) {
+  footer {
+      position: static;
+  }
+  header {
+      padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+
+
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #675640;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+  
+}
+
+
+.footer-distributed h3 span {
+  color: #EBE5DD;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #EBE5DD;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #EBE5DD;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #EBE5DD;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #EBE5DD;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #EBE5DD;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #EBE5DD;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #EBE5DD;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color: #675640;
+}
+
+.footer-links a:hover {
+  color: #675640;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  .footer-distributed .footer-center i {
+      margin-left: 0;
+  }
+}    
+
+/*Map Lokasi*/
+
+.map-area {
+	width: 100%;
+	height: 465px;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+  
+}
+.map-area iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+/*responsive*/
+
+@media (max-width: 991px) {
+	.contact-form {
+		margin-bottom: 30px;
+	}
+	.map-area {
+		width: 100%;
+		height: 400px;
+	}
+}

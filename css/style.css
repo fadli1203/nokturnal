@@ -1,0 +1,375 @@
+html, body {
+ scroll-behavior: smooth;
+  height: 100%;
+}
+/* Css Banner*/
+.container{
+  background-size: cover;   
+}
+
+.bg{
+  background-image: url(../../img/bg/bac.png);
+  background-size: cover;
+  background-origin: initial;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-clip: initial;
+}
+.bg-3{
+  background-image: url(../../img/bg/bac2.png);
+  background-size: cover;
+  background-origin: initial;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-clip: initial;
+}
+
+
+
+/*card best menu*/
+.card{
+  background-color: #c7b299; 
+  border-radius: 1em; 
+  
+}
+.card-img-top {
+  padding: 15px; /* Tambahkan padding untuk jarak antara border dan gambar */
+  width: calc(100% - 20px); /* Kurangi lebar gambar sesuai dengan padding */
+margin: auto;
+  display: block;
+  border-radius: 2em;
+}
+
+.card-title{
+  color: #4d4d4d;
+}
+.card-text{
+  color: #ebe5dd;
+}
+.card-footer{
+  border: none;
+  
+}
+
+.btn {
+  margin-top: auto;
+}
+
+/*banner css*/
+.carousel-item img {
+  width: 100%; /* Sesuaikan dengan persentase atau ukuran yang diinginkan */
+  max-height: 500px; /* Sesuaikan tinggi maksimal sesuai kebutuhan */
+  object-fit: cover; /* Menjaga rasio gambar agar tidak terdistorsi */
+}
+/*navbar css*/
+
+.navbar {
+    background-color: rgba(194,189,181, 0.9); /* Warna latar belakang navbar dengan opasitas 50% */
+    transition: background-color 0.3s ease-in-out; /* Animasi perubahan warna latar belakang */
+    
+}
+
+
+.navbar-brand {
+    color: #4D4D4D; /* Warna teks navbar */
+    margin-left: 50px;
+ 
+   
+
+}
+
+.navbar-nav .nav-link {
+    color: #4D4D4D; /* Warna teks link navbar */
+    
+}
+
+
+#About{
+  width: 54%;
+  border-radius: 20px 20px 20px 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/*button*/
+#ctmbtn{
+  color:white ;
+  background-color:#675640;
+  border: none;
+}
+
+
+
+
+/*Banner Slider*/
+.slider{
+  width: 50%;
+  height: 32vw;
+  margin: 100px auto;
+  position: relative;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+.slider label,
+.slider label img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 400ms ease;
+}
+
+input[type = radio]{
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 108%;
+  left: 50%;
+  transform: translateX(-83px);
+  margin: 0 15px 0 0;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+input[type=radio]:checked{
+  opacity: 1;
+}
+
+
+/* Active Slide */
+
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5{
+  box-shadow: 0 13px 26px rgba(0,0,0,0.3),
+              0 12px 6px rgba(0,0,0,0.2);
+  transform: translate3d(0%, 0, 0px);
+}
+
+
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1{
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3),
+              0 2px 2px rgba(0,0,0,0.2);
+  transform: translate3d(20%, 0, -100px);
+}
+
+
+
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2{
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+              
+  transform: translate3d(40%, 0, -250px);
+}
+
+
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3{
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+              
+  transform: translate3d(-40%, 0, -250px);
+}
+
+
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4{
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3),
+              0 2px 2px rgba(0,0,0,0.2);
+              
+  transform: translate3d(-20%, 0, -100px);
+}
+
+
+/*footer*/
+footer {
+   
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+ 
+ 
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #675640;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+    
+}
+
+
+.footer-distributed h3 span {
+    color: #EBE5DD;
+}
+
+/* Footer links */
+
+
+.footer-distributed .footer-company-name {
+    color: #EBE5DD;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #EBE5DD;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #EBE5DD;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #EBE5DD;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #EBE5DD;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #EBE5DD;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #675640;
+}
+
+.footer-links a:hover {
+    color: #675640;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}    
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+
+
+ 
+
+ 
