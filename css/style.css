@@ -236,13 +236,20 @@ footer {
 .footer-distributed .footer-left {
     width: 30%;
 }
-
-.footer-distributed h3 {
-    color: #675640;
+.footer-left h3{
+  color: #675640;
     font: normal 36px 'Cookie', cursive;
     margin: 0;
-    
+
 }
+.footer-left span{
+  font: normal 36px 'Cookie', cursive;
+    margin: 0;
+  color: #EBE5DD;
+}
+
+
+
 
 
 .footer-distributed h3 span {
